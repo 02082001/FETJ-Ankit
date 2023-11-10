@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import Signup from "./pages/Login";
 import "./App.css";
 
 function App() {
@@ -35,6 +35,7 @@ function App() {
 					exact
 					path="/login"
 					element={user ? <Navigate to="/" /> : <Login />}
+				
 				/>
 				<Route
 					path="/signup"

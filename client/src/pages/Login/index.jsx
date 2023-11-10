@@ -10,18 +10,16 @@ function Login() {
 	};
 	return (
 		<div className={styles.container}>
-			<div className={styles.form_container}>
-				<div className={styles.left}>
-					<img className={styles.img} src="./images/login.jpg" alt="login" />
-					<div className={styles.data}>
-					<p className={styles.textSize}>Hello Chidambar Reddy </p>
-					<a className={styles.textSize} href = 'google.com'>[Sign out]</a>
-				</div>
-				<p className={styles.textSize}>You are signed in with email chidambar@formulaq.io</p>
-				</div>
-
+		
+			
+			
+					<button className={styles.google_btn} onClick={googleAuth}>
+						<img src="./images/google.png" alt="google icon" />
+						<span>Sign in with Google</span>
+					</button>
+				
 			</div>
-		</div>
+		
 	);
 }
 
